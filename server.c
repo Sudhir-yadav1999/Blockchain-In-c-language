@@ -9,7 +9,7 @@
 #include<pthread.h>
 #include<sys/types.h>
 #include<signal.h>
-
+#include "file1.h"
 #include <string.h>
 #include <openssl/sha.h>
 #define BUFSIZE 1024
@@ -193,6 +193,9 @@ for(i=1;i<7;i++)
 }
 */
 
+char fileNa[10][MAXSIZE];
+int currlo = -1;
+
 
 void approval()
 {
@@ -255,6 +258,19 @@ q=q->link;
 printf("No Of Nodes Are\t %d",cnt);
 }
 
+int count11()
+{
+struct node *q;
+int cnt=0;
+q=start;
+while(q!=NULL)
+{
+cnt++;
+q=q->link;
+}
+//printf("No Of Nodes Are\t %d",cnt);
+return cnt;
+}
 void create(char *str)
 {
 
@@ -341,7 +357,8 @@ printf("\n\n\t     :MENU:\n\n");
 printf("\n\t    1.CREATE\n");
 printf("\n\t    2.DISPLAY\n");
 printf("\n\t    3.COUNT\n");
-printf("\n\t    4.EXIT\n");
+printf("\n\t    4.SAVE\n");
+printf("\n\t    5.EXIT\n");
 printf("\n\t  ::::: ENTER UR CHOICE ::::: \n");
 scanf("%d",&ch);
 switch(ch)
@@ -366,6 +383,34 @@ case 2:
 disp();
 break;
 case 4:
+printf("Enter the file name of the ledger :");
+
+struct node *q1;
+
+if(start==NULL)
+{
+printf("\n\nLIST IS EMPTY");
+}
+else
+{
+q1=start;
+
+while(q1!=NULL)
+{
+//printf(" ::::: Filename ::::: %s \n",q1->fdata);
+file_trans(q1->fdata);
+
+q1=q1->link;
+
+}
+
+//char *str1;
+//scanf("%s",fileNa[++currlo]);
+//	str1 = fileNa[currlo];
+  
+
+}
+case 5:
 exit(0);
 
 }
