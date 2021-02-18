@@ -70,6 +70,8 @@ Linked list depict the blockchain, stores the information about the transaction 
   STEP 7)Push file into blockchain by node who has last send concent for approval
 
 BLOCKCHAIN WILL BE WORKING AND YOU CAN DISPLAY HASH VALUE ALSO 
+
+NOTE : The output of the code is saved in output.docx file have a look to see the flow of execution 
           
 
 CONCLUSION AND FUTURE SCOPE
