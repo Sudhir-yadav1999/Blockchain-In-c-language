@@ -31,6 +31,7 @@ Linked list depict the blockchain, stores the information about the transaction 
 
 
  EXECUTION (STEP BY STEP)
+ 
  In this project, working of block chain through a millitary purchase between countries (ex: India and USA )
  where we have designed 6 nodes in general,
  out of these 6 nodes we have assigned 3 nodes to Indian sides namely
