@@ -73,8 +73,9 @@ BLOCKCHAIN WILL BE WORKING AND YOU CAN DISPLAY HASH VALUE ALSO
 
 NOTE : The output of the code is saved in output.docx file have a look to see the flow of execution 
           
-
+---------------------------
 CONCLUSION AND FUTURE SCOPE
+---------------------------
 This project is robust and flexible enough to ensure quick, encrypted and decentralized transaction between any two parties involving multiple nodes on each side.
 We demonstrated the concept of BlockChain through an idea of defence procurement that takes place between 2 nations. 
 However, this project can be further elaborated by adding features like Pocket which would further enable the user to transfer money without the inclusion of any third party.
